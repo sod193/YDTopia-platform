@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoApp - Dil Öğrenme Platformu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigasyon -->
+    <header class="navbar">
+        <div class="logo">Lingo<span>App</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Oyunlar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana İçerik: Kelime Oyunu Modülü -->
+    <main class="container">
+        <section class="card-section">
+            <h2>Günün Kelimesi</h2>
+
+            <div class="flashcard" id="card">
+                <div class="card-front">
+                    <span class="word">Resilient</span>
+                    <span class="hint">(Sıfat) - Tıkla ve anlamını gör</span>
+                </div>
+                <div class="card-back">
+                    <span class="meaning">Dayanıklı, Esnek, Kendini Çabuk Toparlayan</span>
+                    <p class="example">"She is a resilient person."</p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="prev-btn">Önceki</button>
+                <button id="flip-btn">Karakterini Çevir</button>
+                <button id="next-btn">Sonraki</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
