@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog & Makaleler  |  YDTopia</title>
+        <!-- CSS dosyalarinin ana dizinde oldugunu belitmek icin ../ kullanilir -->
+         <link rel="stylesheet" href="../css/main.css">
+         <style>
+            .blog-header {
+                text-align: center;
+                padding: 50px 20px;
+            }
+            .blog-header h1 {
+                font-size: 2.5rem;
+                color: #38bdf8;
+                margin-bottom: 10px;
+            }
+            .blog-header p {
+                color: #94a3b8;
+            }
+            .blog-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 25px;
+                padding: 20px 8% 60px 8%;
+            }
+            .blog-card {
+                background-color: #1e293b;
+                border: 1px solid #334155;
+                border-radius: 12px;
+                padding: 25px;
+                transition: transform 0.3s, border-color 0.3s;
+            }
+            .blog-card:hover {
+                transform: translateY(-5px);
+                border-color: #38bdf8;
+            }
+            .blog-category {
+                font-size: 0.85rem;
+                background-color: #0f172a;
+                color: #38bdf8;
+                padding: 5px 12px;
+                border-radius: 20px;
+                display: inline-block;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+            .blog-card h3 {
+                font-size: 1.4rem;
+                margin-bottom: 12px;
+                color: #f8fafc;
+            }
+            .blog-card p {
+                color: #94a3b8;
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+            .read-more {
+                color: #38bdf8;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 0.95rem;
+            }
+            .read-more:hover {
+                text-decoration: underline;
+            }
+         </style>
+    </head>
+    <body>
+        <!-- Ust Menu -->
+        <header>
+            <div class="logo">YDTopia</div>
+            <nav>
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="games.html">Oyunlar</a>
+                <a href="resources.html">Kaynaklar</a>
+            </nav>
+        </header>
+
+        <!-- Blog Baslik Alani -->
+         <section class="blog-header">
+            <h1>Dil İçin Yazılar & Taktikler</h1>
+            <p>Sınıf arkadaşlarımızın kaleminden YKS-Dil ipuçları, gramer rehberleri ve kelime ezberleme taktikleri.</p>
+         </section>
+
+         <!-- İçerikler Geldikçe Buraya Eklenecek -->
+        <main class="blog-grid">
+            <!-- Örnek Yazı 1 -->
+            <article class="blog-card">
+                <span class="blog-category">YKS-Dil Taktikleri</span>
+                <h3>YKS-Dil Sınavında Kelime Netlerini 2 Katına Çıkarma Yolu</h3>
+                <p>Sınavda en çok zorlanılan kelime sorularını aşmak için ezber yerine hangi mantığı izlemelisiniz? İşte pratik ipuçları...</p>
+                <a href="#" class="read-more">Devamını Oku &rarr;</a>
+            </article>
+
+            <!-- Örnek Yazı 2 -->
+            <article class="blog-card">
+                <span class="blog-category">Gramer Rehberi</span>
+                <h3>İngilizcede "Tenses" Karmaşasına Son: En Net Özet</h3>
+                <p>Zamanlar kafanızı karışırıyormu? Olayı kökünden çözen zaman çizelgesi ve pratik formüller bu yazıda.</p>
+                <a href="#" class="read-more">Devamını Oku &rarr;</a>
+            </article>
+
+            <!-- Örnek Yazı 3 -->
+                <article class="blog-card">
+                    <span class="blog-category">Öğrenci Deneyimi</span>
+                    <h3>Dil Sınıfında Okumanın Avantajları ve Kariyer Hedevleri</h3>
+                    <p>Sadece bir lise bölümü değil, küresel bir vizyon kazanmak için dil sınıfı bize neler sunuyor?</p>
+                    <a href="#" class="read-more">Devamını Oku &rarr;</a>
+                </article>
+        </main>
+
+        <!-- Alt Bilgi -->
+         <footer>
+            <p>&copy; 2026 YDTopia. Tüm hakları saklıdır. Geleceğin dil platformu.</p>
+         </footer>
+    </body>
+</html>
